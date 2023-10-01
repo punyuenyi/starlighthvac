@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.16c05b7b.js",
-    "static/js/787.9a6071c7.chunk.js": "/static/js/787.9a6071c7.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.16c05b7b.js.map": "/static/js/main.16c05b7b.js.map",
-    "787.9a6071c7.chunk.js.map": "/static/js/787.9a6071c7.chunk.js.map"
+    "main.css": "/starlighthvac/static/css/main.e6c13ad2.css",
+    "main.js": "/starlighthvac/static/js/main.f50ae935.js",
+    "static/js/787.9a6071c7.chunk.js": "/starlighthvac/static/js/787.9a6071c7.chunk.js",
+    "static/media/05.jpeg": "/starlighthvac/static/media/05.d2534d63a471609add38.jpeg",
+    "static/media/03.jpeg": "/starlighthvac/static/media/03.8a3d465ace923519169b.jpeg",
+    "static/media/starlight_nobg.png": "/starlighthvac/static/media/starlight_nobg.5009cf27fa076b5f4f37.png",
+    "index.html": "/starlighthvac/index.html",
+    "main.e6c13ad2.css.map": "/starlighthvac/static/css/main.e6c13ad2.css.map",
+    "main.f50ae935.js.map": "/starlighthvac/static/js/main.f50ae935.js.map",
+    "787.9a6071c7.chunk.js.map": "/starlighthvac/static/js/787.9a6071c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.16c05b7b.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.f50ae935.js"
   ]
 }
