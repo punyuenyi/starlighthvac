@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/starlighthvac/static/css/main.e6c13ad2.css",
-    "main.js": "/starlighthvac/static/js/main.f50ae935.js",
+    "main.js": "/starlighthvac/static/js/main.c7adc988.js",
     "static/js/787.9a6071c7.chunk.js": "/starlighthvac/static/js/787.9a6071c7.chunk.js",
     "static/media/05.jpeg": "/starlighthvac/static/media/05.d2534d63a471609add38.jpeg",
     "static/media/03.jpeg": "/starlighthvac/static/media/03.8a3d465ace923519169b.jpeg",
     "static/media/starlight_nobg.png": "/starlighthvac/static/media/starlight_nobg.5009cf27fa076b5f4f37.png",
     "index.html": "/starlighthvac/index.html",
     "main.e6c13ad2.css.map": "/starlighthvac/static/css/main.e6c13ad2.css.map",
-    "main.f50ae935.js.map": "/starlighthvac/static/js/main.f50ae935.js.map",
+    "main.c7adc988.js.map": "/starlighthvac/static/js/main.c7adc988.js.map",
     "787.9a6071c7.chunk.js.map": "/starlighthvac/static/js/787.9a6071c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f50ae935.js"
+    "static/js/main.c7adc988.js"
   ]
 }
