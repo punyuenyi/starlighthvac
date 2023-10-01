@@ -54,23 +54,36 @@ function About() {
 
   return (
     <div style={styles.container}>
-      <div>
-        <img alt='' src={img5} style={styles.img} />
-        <h1 style={styles.title}>Your trusted HVAC service provider</h1>
+      <div style={{
+        backgroundImage: `url(${img5}) `,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        width: '100%',
+        height: '60vh'
+      }}>
+        <h1 style={{ 
+          position: 'absolute', 
+          zIndex: 1, 
+          top: '12%', 
+          right: '10%', 
+          color: Colors.dark, textAlign: 'right', width: '100%' }}>
+          Your trusted<br/> HVAC service provider
+        </h1>
       </div>
       <div style={styles.missionCont}>
-        <h1>Why Choose Us?</h1>
+        <h2>Why Choose Us?</h2>
         <div style={styles.rowContainer}>
           {missions.map((obj) => ourMission(obj))}
         </div>
       </div>
-      <div style={{  display: 'flex', padding: '10%', justifyContent: 'center', alignItems: 'center' }}>
-          <img alt='' src={img3} style={{transform:``}} />
-        <div style={{ width: '40%', backgroundColor: Colors.skyblue_01, color: Colors.white,  marginLeft: '2%' }}>
-          <div style={{padding: '35px', textAlign: 'left', height: '80%',}}>
+      <div style={{ display: 'flex', padding: '10%', justifyContent: 'center', alignItems: 'center' }}>
+        <img alt='' src={img3} style={{ transform: `` }} />
+        <div style={{ width: '40%', backgroundColor: Colors.skyblue_01, color: Colors.white, marginLeft: '2%' }}>
+          <div style={{ padding: '35px', textAlign: 'left', height: '80%', }}>
             <h1>About us</h1>
             <p>
-              Founded in 2013, we have been serving the GTA area with unparalleled dedication and workmanship. Our team of certified technicians is equipped with the latest tools and knowledge to offer you the most efficient and reliable HVAC services available.<br/><br/>
+              Founded in 2013, we have been serving the GTA area with unparalleled dedication and workmanship. Our team of certified technicians is equipped with the latest tools and knowledge to offer you the most efficient and reliable HVAC services available.<br /><br />
               We understand that every home and business is different, and we customize our solutions to fit your unique needs. Our mission is to provide top-quality comfort solutions that not only meet but exceed your expectations.
             </p>
           </div>
@@ -87,20 +100,18 @@ const styles = {
   container: {
     position: 'relative',
     textAlign: 'center',
-    // color: Colors.white,
     color: Colors.dark,
-
   },
   img: {
     width: '100%',
     zIndex: 0,
   },
-  title: {
-    // position: 'absolute',
-    // top: '40%',
-    // left: '60%',
-    zIndex: 1,
-  },
+  // title: {
+  //   // position: 'absolute',
+  //   // top: '40%',
+  //   // left: '60%',
+  //   zIndex: 1,
+  // },
   missionCont: {
     color: Colors.dark,
     alignItem: 'center',

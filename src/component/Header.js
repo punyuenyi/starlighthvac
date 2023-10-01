@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 import { Colors } from '../style';
 import logo from './../image/starlight_nobg.png';
 
@@ -12,13 +12,13 @@ function Header() {
         <div className='navEle' style={styles.name}>STARLIGHT HVAC</div>
       </div>
 
-      <div style={styles.rightContainer}>
+      {/* <div style={styles.rightContainer}>
         <Button style={{...styles.links, color: Colors.skyblue_01}} href='/'>
           About Us
         </Button>
         <Button style={{...styles.links, color: Colors.skyblue_01}}>Projects</Button>
         <Button style={{...styles.links, color: Colors.orange2, fontWeight: 600}}>Contact us</Button>
-      </div>
+      </div> */}
     </div>
   )
 }
@@ -37,7 +37,6 @@ const styles = {
     alignItems: 'center',
     alignSelf: 'center',
     justifyContent: 'space-between',
-    // backgroundColor: 'pink'
     zIndex: 10.
 
   },

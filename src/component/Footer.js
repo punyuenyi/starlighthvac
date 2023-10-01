@@ -1,10 +1,13 @@
 import React from 'react';
 import { Colors } from '../style';
-// import logo from './../image/starlight_nobg.png';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const about = [
+  { icon: <LocationOnIcon />, value: 'Toronto, ON, Canada' },
   { icon: <PhoneIcon />, value: '+1 647 613 8221' },
   { icon: <MailOutlineIcon />, value: 'hvac.starlight@gmail.com' }
 ]
@@ -13,17 +16,15 @@ const about = [
 const renderDetail = (obj) => {
   return (
     <div key={obj.value} style={{
-      // width: '100%', 
       marginTop: '20px',
-      // marginBottom: '20px',
       display: 'flex',
-      // backgroundColor: 'yellow'
+      alignItems: 'center'
     }}>
-      <div style={{ color: Colors.skyblue_01 }}>
+      <div style={{ color: Colors.lightgrey, }}>
         {obj.icon}
       </div>
       <div style={{
-        marginLeft: '20px',
+        marginLeft: '10px',
         color: Colors.dark
       }}>
         {obj.value}
@@ -41,16 +42,21 @@ function Footer() {
       <div style={styles.container}>
         <div className='verticalContainer' style={styles.vertiaclContainer}>
           {about.map((obj) => renderDetail(obj))}
-          {/* <div style={{display: 'flex', alignItems: 'center', color: Colors.skyblue_01}}>
-            <img src={logo} alt='' style={styles.icon} />
-            <h2 style={{marginLeft: '15px'}}>
-              STARLIGHTHVAC
-            </h2>
-          </div> */}
         </div>
         <div className='verticalContainer' style={styles.vertiaclContainer}>
-          facebook & instagram
+          <p style={{fontSize: '12px'}}>FOLLOW US:</p>
+          <div className='followContainer' style={styles.followContainer}>
+            <a href='https://www.instagram.com/starlight_hvac/' target="_blank" rel="noreferrer"
+              style={styles.link}>
+              <InstagramIcon style={{ color: Colors.lightgrey, marginRight: '10px' }} />
+            </a>
+            <a href='https://www.facebook.com/profile.php?id=100091852681814' target="_blank" rel="noreferrer"
+              style={styles.link}>
+              <FacebookRoundedIcon style={{ color: Colors.lightgrey, marginRight: '10px' }} />
+            </a>
+          </div>
         </div>
+
       </div>
       <div style={styles.btmBar}>
         <p style={{ marginLeft: '3%', }}>
@@ -71,18 +77,31 @@ const styles = {
     justifyContent: 'space-evenly',
     alignContent: 'center',
     alignItems: 'center',
-    // alignItems: 'flex-end',
-    // height: '300px',
-    // backgroundColor: 'pink',
-    border: '1px solid'
+    borderTop: '0.1px solid ' + Colors.lightgrey,
   },
   vertiaclContainer: {
     marginLeft: '3%',
     marginBottom: '3%',
     display: 'flex',
     flexDirection: 'column',
-    // backgroundColor: 'pink',
+    color: Colors.skyblue_02,
     width: '100%',
+    fontSize: '12px'
+  },
+  followContainer: {
+    // marginLeft: '3%',
+    marginBottom: '3%',
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    // backgroundColor: 'pink'
+  },
+  link: {
+    textDecoration: 'none',
+    color: Colors.dark,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   btmBar: {
     width: '100%',
