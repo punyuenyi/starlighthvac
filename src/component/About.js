@@ -3,8 +3,9 @@ import React from 'react';
 // import img1 from '../image/01.jpeg';
 // import img2 from '../image/02.jpeg';
 import img3 from '../image/03.jpeg';
-// import img4 from '../image/04.jpeg';
 import img5 from '../image/05.jpeg';
+import floorHeatimg from '../image/IMG_4554.jpeg';
+import aboutus from '../image/IMG_4557.jpeg';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
@@ -55,19 +56,20 @@ function About() {
   return (
     <div style={styles.container}>
       <div style={{
-        backgroundImage: `url(${img5}) `,
+        // backgroundImage: `url(${img5}) `,
+        backgroundImage: `url(${floorHeatimg}) `,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         width: '100%',
-        height: '60vh'
+        height: '80vh'
       }}>
         <h1 style={{ 
           position: 'absolute', 
           zIndex: 1, 
           top: '12%', 
-          right: '10%', 
-          color: Colors.dark, textAlign: 'right', width: '100%' }}>
+          left: '10%',
+          color: Colors.dark, textAlign: 'left', width: '100%' }}>
           Your trusted<br/> HVAC service provider
         </h1>
       </div>
@@ -78,7 +80,8 @@ function About() {
         </div>
       </div>
       <div style={{ display: 'flex', padding: '10%', justifyContent: 'center', alignItems: 'center' }}>
-        <img alt='' src={img3} style={{ transform: `` }} />
+        {/* <img alt='' src={img3} style={{ transform: `` }} /> */}
+        <img alt='' src={aboutus} style={{ transform: ``, width: '50%' }} />
         <div style={{ width: '40%', backgroundColor: Colors.skyblue_01, color: Colors.white, marginLeft: '2%' }}>
           <div style={{ padding: '35px', textAlign: 'left', height: '80%', }}>
             <h1>About us</h1>
