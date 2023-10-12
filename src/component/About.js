@@ -1,11 +1,6 @@
 import React from 'react';
-// import starlight from '../image/starlight.png';
-// import img1 from '../image/01.jpeg';
-// import img2 from '../image/02.jpeg';
-// import img3 from '../image/03.jpeg';
-// import img5 from '../image/05.jpeg';
-import floorHeatimg from '../image/IMG_4554.jpeg';
-import aboutus from '../image/IMG_4557.jpeg';
+import floorHeatimg from '../image/about01.jpeg';
+import aboutus from '../image/about02.jpeg';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
@@ -76,7 +71,7 @@ function About() {
       <div style={styles.missionCont}>
         <h2>Why Choose Us?</h2>
         <div style={styles.rowContainer}>
-          {missions.map((obj) => ourMission(obj))}
+          {missions.map((obj, index) => ourMission(obj))}
         </div>
       </div>
       <div style={{ display: 'flex', padding: '10%', justifyContent: 'center', alignItems: 'center' }}>
@@ -109,19 +104,13 @@ const styles = {
     width: '100%',
     zIndex: 0,
   },
-  // title: {
-  //   // position: 'absolute',
-  //   // top: '40%',
-  //   // left: '60%',
-  //   zIndex: 1,
-  // },
   missionCont: {
     color: Colors.dark,
     alignItem: 'center',
     alignText: 'center',
   },
   mission: {
-    maxWidth: '18%',
+    width: '200px',
     border: '1px solid',
     borderColor: Colors.borderlight,
   },
