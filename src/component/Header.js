@@ -1,7 +1,25 @@
 import React from 'react';
-// import { Button } from '@mui/material';
+import { Button } from '@mui/material';
 import { Colors } from '../style';
 import logo from './../image/starlight_nobg.png';
+
+
+const sepPage = [
+  {
+    href: '/',
+    btnText: 'About Us'
+  },
+  {
+    href: '/projects',
+    btnText: 'What We Do',
+  },
+  {
+    href: '/contact',
+    btnText: 'Contact Us',
+    color: Colors.orange2,
+  }
+
+]
 
 
 function Header() {
@@ -11,14 +29,13 @@ function Header() {
         <img src={logo} alt='' style={styles.icon} />
         <div className='navEle' style={styles.name}>STARLIGHT HVAC</div>
       </div>
-
-      {/* <div style={styles.rightContainer}>
-        <Button style={{...styles.links, color: Colors.skyblue_01}} href='/'>
-          About Us
-        </Button>
-        <Button style={{...styles.links, color: Colors.skyblue_01}}>Projects</Button>
-        <Button style={{...styles.links, color: Colors.orange2, fontWeight: 600}}>Contact us</Button>
-      </div> */}
+      <div style={styles.rightContainer}>
+        {sepPage.map((obj) => {
+          return (
+            <Button style={{...styles.links, color: obj?.color ?? Colors.skyblue_01}} href={obj.href}> {obj.btnText}</Button>
+          )
+        })}
+      </div>
     </div>
   )
 }
